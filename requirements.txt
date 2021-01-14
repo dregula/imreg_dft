@@ -1,4 +1,9 @@
 setuptools>=1.0
 numpy>=1.7
-scipy>=0.12
-pillow
+scipy>=0.12,<1.2
+pillow~=7.2.0
+imageio
+opencv-python
+matplotlib~=3.3.2
+pytest~=6.1.1
+cffi~=1.14.

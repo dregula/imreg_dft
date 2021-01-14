@@ -7,3 +7,5 @@ doc/_build
 build
 dist
 .pypirc
+/venv/
+/imreg_dft.egg-info/

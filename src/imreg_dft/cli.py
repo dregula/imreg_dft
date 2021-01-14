@@ -296,13 +296,12 @@ def _get_resdict(imgs, opts, tosa=None):
 def run(template, subject, opts):
     # lazy import so no imports before run() is really called
     from imreg_dft import imreg
+    import cv2
 
     fnames = (template, subject)
     loaders = opts["loaders"]
     loader_img = loaders[1]
     imgs = [loa.load2reg(fname) for fname, loa in zip(fnames, loaders)]
-
-    # The array where the result should be placed
     tosa = None
     saver = None
     outname = opts["output"]

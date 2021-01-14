@@ -387,8 +387,10 @@ class _PILLoader(Loader):
         super(_PILLoader, self).__init__()
 
     def _load2reg(self, fname):
-        from scipy import misc
-        loaded = misc.imread(fname)
+        # from scipy import misc
+        # loaded = misc.imread(fname)
+        import imageio
+        loaded = imageio.imread(fname)
         self.loaded = loaded
         ret = loaded
         # flattening is a no-op on 2D images
